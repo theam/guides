@@ -115,7 +115,8 @@ During the Software Development Life Cycle we will go through different environm
 
 If any environment is blocked, it can slow down the pace at which features are released.
 
-## What we do
+## What we do
+
 Combining some of the above solutions such as *integration testing* and *data provisioning* we believe that it is possible to have a `Development` environment in which many tests could be happening at the same time without affecting each other. As an enhancement to the above approach, and taking into consideration that it could be complex depending on the architecture, we should aim to create functionality and tooling to allow replication of a `Development` environment locally.
 
 We also believe that while a `Development` environment does not necessarily need to be exactly the same as the `Production` environment, `UAT` should be an **exact replication** of a `Production` environment. This will ensure that the behavior observed on `UAT` will be the same as that observed in `Production` and no unexpected surprises or errors will crop up in production.
@@ -123,7 +124,8 @@ We also believe that while a `Development` environment does not necessarily need
 # 6. Testing environment health
 It is **vital** to developers and QA engineers that the testing **environments are always healthy**.
 
-## What we do
+## What we do
+
 Running scheduled daily or hourly health checks on the testing environments and on individual services to verify that everything is up and running, as well as being able to identify what errors need to be addressed.
 
 There could be a case in which a memory leakage or slowly manifesting regression is introduced which these tests could catch.
@@ -133,7 +135,8 @@ Results of these tests can be emailed (Daily health check) or sent to a Slack ch
 # 7. Entire application tests run at night
 Daily test runs give you a complete view of how the application is performing and how it behaves under pressure.
 
-## What we do
+## What we do
+
 To run UI automation, integration, load, and performance tests of the entire application at night when the environmental load is low. 
 
 The results are then combined and distributed as reports to the necessary teams.
@@ -141,7 +144,8 @@ The results are then combined and distributed as reports to the necessary teams.
 # 8. Test Completion Reports
 Developers and QA engineers should both be accountable for each feature that is released into production. A Test Completion Report (TCR) is a document that reflects that the feature to be released has been successfully tested with positive results.
 
-## What we do
+## What we do
+
 **Note:** Not necessary for Development environment
 
 To issue a TCR written by a QA engineer for each feature that is released to UAT or Production environments, making sure that functionality has been thoroughly tested. This report should also contain load and performance checks when appropriate where results are compared against previous results.
@@ -165,7 +169,8 @@ The document should at least contain the following sections:
 # 9. Root Cause Analysis (RCA)
 Be prepared to identify what has caused the issue and how we could avoid that issue from happening again.
 
-## What we do
+## What we do
+
 To have a process available where a “Root Cause Analysis” meeting is scheduled after an event that has had negative impact in the application occurred.
 
 The “5 Whys” approach is carried in order to fully understand how the issue occurred and take actions to avoid the issue happening again.
@@ -175,7 +180,8 @@ The output is socialized to the rest of the team.
 # 10. Synchronization between Developers and QA engineers
 Having developers and QA engineers in sync means that defects and bugs are scoped at earlier stages. This can be achieved when there is a well defined task including acceptance criteria, contracts, and testing criteria.
 
-## What we do
+## What we do
+
 To have well defined stories that can be understood by anyone on the team in a way that allows any other member of the team to continue the work if necessary.
 
 An example of a story below:
@@ -191,7 +197,8 @@ By following the above story and contract, both developers and QA engineers star
 # 11. Onboarding new QA Engineers
 By having an onboarding document to which we can refer to, we could reduce the dedicated time required for knowledge transfer.
 
-## What we do
+## What we do
+
 To create an onboarding document in which new joiners are able to easily find information about:
 
 - Requesting access to required infrastructure and applications
