@@ -67,7 +67,8 @@ All integration tests for different services would be located in the same GIT re
 # 3.3 End to End Testing
 End to End testing is performed to ensure that the full application works as expected from client to services. Having this type of testing provides a more accurate view of the App integrity.
 
-## What we do
+## What we do
+
 Create a solution that produces automated interactions with the application and verify that the output is what it is expected. This is achieved by running Automated UI Tests hitting real endpoints.
 
 # 3.4 Automated Load Testing
