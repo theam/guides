@@ -84,7 +84,8 @@ These tests are run in Development environments on a regular schedule or after d
 # 3.5 Manual Testing
 Following scripts to manually verify the functionality of an application is a repetitive, exhausting and error prone process. Despite all of these disadvantages, it is still used as part of the Software Development Life Cycle in order to verify certain vital paths of the application.
 
-## What we do
+## What we do
+
 To progressively reduce the amount of manual testing in favor of more automated testing.
 
 We trully believe in automation and we think that adding to the team software engineers specialized in automated testing can provide the company with great advantages such as more bandwidth and resources focused on other areas of the business as well as faster feedback loops.
