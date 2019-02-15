@@ -73,7 +73,7 @@ Create a solution that produces automated interactions with the application and 
 # 3.4 Automated Load Testing
 Changes to the codebase may not have a noticeable impact on infrastructure when tested with a few requests per minute. However, they could have huge impact when the number of requests increases dramatically. Load testing helps to identify potential issues that aren’t visible with other types of testing but will occur under production load.
 
-## What we do
+## What we do
 By adding pipeline automation for load testing and using a framework like [Gatling](https://gatling.io/) or [Serverless Artillery](https://github.com/Nordstrom/serverless-artillery) to write session simulations we can ensure that any version of the code we want to test will not have negative impact on the application or infrastructure. Furthermore, results of these tests could be compared against previous results to look at resource usage, efficiency, and changes to metrics over time. 
 
 This is another step in the process that provides developers and QAs with more confidence at the time that code is deployed.
