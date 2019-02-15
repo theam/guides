@@ -177,12 +177,12 @@ Having developers and QA engineers in sync means that defects and bugs are scope
 We have well defined stories that can be understood by anyone on the team in a way that allows any other member of the team to continue the work if necessary.
 
 An example of a story below:
+
 | | |
 |-|-|
 |__Description__|To create a new endpoint in <service-name> that retrieves information from <database-name> based on a given order number and returns a JSON object containing the order delivery address and date of order.<br><br>An error must be returned if the order is not found, there is a missing query parameter, or if there is a technical error.|
 |__Acceptance Criteria__|- 200 OK, body returned contains correct order delivery address and date of order<br>- 404 is returned when order is not found or request is missing query parameter<br>- 500 error is returned when a technical error occurs|
 |__Notes__|Endpoint contract:<br>HTTP Method: GET<br>Endpoint: https://<host>:<port>/<service-name>?orderId=<orderId><br>...<br><br>Expected response:<br>...<br>|
-|||
 
 By following the above story and contract, both developers and QA engineers start writing code and checking their results against each other's code. This improves cooperation and communication and allow the release of features at a faster pace.
 
