@@ -76,6 +76,10 @@ For package management, we use [Yarn](https://yarnpkg.com/) instead of NPM. It p
 
 [Install it in your system](https://yarnpkg.com/en/docs/install)
 
+If you use brew in macOS, just run:
+
+    brew install yarn
+
 ## 2.2. TypeScript
 
 We use [TypeScript](https://www.typescriptlang.org/) because it is JavaScript, with types.
@@ -164,6 +168,8 @@ we use an `int` for a server port.
 This library allows you to model much better these
 "small" types. Check the [section about avoiding primitives](#53-avoid-primitives).
 
+    yarn add newtype-ts
+
 ## 3.4. io-ts
 
 [`io-ts`](https://github.com/gcanti/io-ts
@@ -222,6 +228,8 @@ represents:
 * Success
 
 A small tutorial is available on the [modelling remote data](#59-modelling-remote-data) section.
+
+    yarn add remote-data-ts
 
 # 4. Code Style 👗
 
