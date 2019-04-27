@@ -13,14 +13,14 @@ review process is for, **to help each other make their code better**.
 
 <!-- TOC -->
 
-- [1. Why a guide? 🤔](#1-why-a-guide-🤔)
-- [2. Getting Started 🚀](#2-getting-started-🚀)
+- [1. Why a guide? 🤔](#1-why-a-guide-)
+- [2. Getting Started 🚀](#2-getting-started-)
     - [2.1. Yarn](#21-yarn)
     - [2.2. TypeScript](#22-typescript)
     - [2.3. Visual Studio Code](#23-visual-studio-code)
     - [2.4. React DevTools](#24-react-devtools)
     - [2.5. Linter](#25-linter)
-- [3. Required libraries 📚](#3-required-libraries-📚)
+- [3. Required libraries 📚](#3-required-libraries-)
     - [3.1. React](#31-react)
     - [3.2. fp-ts](#32-fp-ts)
     - [3.3. newtype-ts](#33-newtype-ts)
@@ -29,12 +29,12 @@ review process is for, **to help each other make their code better**.
     - [3.6. elm-ts](#36-elm-ts)
     - [3.7. typesafe-actions](#37-typesafe-actions)
     - [3.8. remote-data-ts](#38-remote-data-ts)
-- [4. Code Style 👗](#4-code-style-👗)
+- [4. Code Style 👗](#4-code-style-)
     - [4.1. Use `const`](#41-use-const)
     - [4.2. Program using expressions, not statements](#42-program-using-expressions-not-statements)
     - [4.3. The ternary operator is your friend](#43-the-ternary-operator-is-your-friend)
     - [4.4. NEVER, EVER, return null/undefined](#44-never-ever-return-nullundefined)
-- [5. Typing stuff ⌨️](#5-typing-stuff-⌨️)
+- [5. Typing stuff ⌨️](#5-typing-stuff-️)
     - [5.1. Type inference](#51-type-inference)
     - [5.2. Avoid classes](#52-avoid-classes)
     - [5.3. Avoid primitives](#53-avoid-primitives)
@@ -46,12 +46,12 @@ review process is for, **to help each other make their code better**.
     - [5.7. Schema validators](#57-schema-validators)
     - [5.8. Types for React actions](#58-types-for-react-actions)
     - [5.9. Modeling remote data](#59-modeling-remote-data)
-- [6. Thinking functionally ⚗️](#6-thinking-functionally-⚗️)
+- [6. Thinking functionally ⚗️](#6-thinking-functionally-️)
     - [6.1. ~~Array~~ Data transformations](#61-array-data-transformations)
     - [6.2. Avoid promises](#62-avoid-promises)
     - [6.3. Using IO for side effects](#63-using-io-for-side-effects)
     - [6.4. Testing in a functional way](#64-testing-in-a-functional-way)
-- [7. Architecting React Apps 🏗](#7-architecting-react-apps-🏗)
+- [7. Architecting React Apps 🏗](#7-architecting-react-apps-)
     - [7.1. elm-ts vs redux](#71-elm-ts-vs-redux)
     - [7.2. The basic pattern](#72-the-basic-pattern)
     - [7.3. Handling app events](#73-handling-app-events)
@@ -106,7 +106,7 @@ _Install them from VSCode by doing `CMD + SHIFT + P` in macOS or `CTRL+P` in oth
 * [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 * [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) (if you like Vim keybindings)
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Make sure you go to settings and enable the "Format on save" option.
@@ -153,8 +153,8 @@ that do not come with TypeScript by default, for example:
 * [Optionals](#561-option)
 * [Either](#562-either)
 * [Function utilities](FIXME)
-* [Task](FIXME)
-* [IO](FIXME)
+* [Task](#62-avoid-promises)
+* [IO](#63-using-io-for-side-effects)
 * [Date](FIXME)
 
 ## 3.3. newtype-ts
@@ -191,14 +191,14 @@ There is more info on [the schema validation section](#57-schema-validators).
 ## 3.6. elm-ts
 
 [`elm-ts`](https://github.com/gcanti/elm-ts
-) leverages [React](#react), [rxjs](https://rxjs-dev.firebaseapp.com/), and [fp-ts](#fp-ts) to simplify the
+) leverages [React](#31-react), [rxjs](https://rxjs-dev.firebaseapp.com/), and [fp-ts](#32-fp-ts) to simplify the
 architecture of React applications.
 
     yarn add elm-ts
 
 ## 3.7. typesafe-actions
 
-While in [React](#react)/Redux one would define an event as a
+While in [React](#31-react)/Redux one would define an event as a
 string, this is a very error-prone technique, and we
 could end up debugging a whole hour just because a typo.
 
@@ -227,7 +227,7 @@ represents:
 * Failure
 * Success
 
-A small tutorial is available on the [modelling remote data](#59-modelling-remote-data) section.
+A small tutorial is available on the [modeling remote data](#59-modeling-remote-data) section.
 
     yarn add remote-data-ts
 
@@ -526,7 +526,7 @@ system if you call a function that takes many
 arguments of the same type, but are designated for
 different things.
 
-Do you remember [the NASA Mars incident](http://edition.cnn.com/TECH/space/9909/30/mars.metric.02/)?
+Do you remember [the NASA Mars incident](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter#Cause_of_failure)?
 They probably had some code like this:
 
 ```typescript
@@ -1028,8 +1028,8 @@ TS, but they are somewhat limited.
 `fp-ts` comes with a wide variety of functions to work with arrays and
 ways of composing the functions:
 
-* https://gcanti.github.io/fp-ts/Array.html
-* https://gcanti.github.io/fp-ts/function.html
+* https://gcanti.github.io/fp-ts/modules/Array.ts.html
+* https://gcanti.github.io/fp-ts/modules/function.ts.html
 
 ## 6.2. Avoid promises
 
