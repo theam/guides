@@ -1,4 +1,14 @@
 # The Agile Monkeys guides and best practices
 
-* [Quality Assurance](quality-assurance/README.md)
-* [TypeScript general practices and style](typescript/README.md)
+## Programming languages
+
+* [TypeScript general practices and style](typescript)
+
+## Decision guide
+
+* [GraphQL](graphql)
+
+## Team practices
+
+* [Quality Assurance](quality-assurance)
+
